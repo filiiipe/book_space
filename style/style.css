@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+   font-family: 'android';
+   src:url('../fontes/idroid.otf') format('opentype') ;
+   font-weight: normal; 
+}
+
+
+
+:root{
+    --cor0: #0c6cc6;
+    --cor1: #0a77ad;
+    --cor2: #0050c7;
+
+    --fonte-padrao:arial,Verdana,Helvetica,sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android:'Android', sans-serif;
+}
+
+*{
+    margin:0px;
+    padding:0px
+}
+
+
+
+body{
+    background-color: var(--cor0) ;
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after{
+    content:'\00A0\1F517'
+}
+/*Cabeçalho*/
+header {
+    background-color: var(--cor); /* Altere a cor conforme desejado */
+    color: rgb(58, 124, 212);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #1467c0;
+    color: rgb(36, 69, 152);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 60px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: rgb(58, 124, 212);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}  
+
+/* Barra de pesquisa*/
+header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.search-container button[type=submit] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
