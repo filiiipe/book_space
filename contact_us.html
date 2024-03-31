@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <a href="bookSpace.html">
+            <div class="logo">
+                <img src="imagens/book.icon.png" alt="Logo do BookSpace">
+            </div>
+        </a>
+        
+        <!-- Navegação principal -->
+        <nav>
+            <ul>
+                <li><a href="bookSpace.html">Início</a></li>
+                <li><a href="/trocas">Trocas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da página -->
+    <div style="padding: 50; padding-top: 200px;">
+        
+        <h2 style="text-align: center; color: rgb(0, 0, 0);">Fale Conosco</h2>
+        
+        <form action="/send" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

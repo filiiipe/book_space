@@ -1,17 +1,33 @@
+/* Estilos gerais */
+body {
+
+    background-color: #7bb6f6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 /* Estilos para o cabeçalho */
 header {
     background-color: #16004d; /* Cor de fundo do cabeçalho */
+    color: #fff;
     padding: 10px 0; /* Espaçamento interno reduzido */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
     position: fixed; /* Fixa o cabeçalho na parte superior da página */
-    width: 100%; /* Define a largura como 100% da largura da janela do navegador */
+    width: 100%; /* Largura total */
     top: 0; /* Alinha o cabeçalho no topo da janela */
     left: 0; /* Alinha o cabeçalho à esquerda da janela */
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+
+/* Definindo a largura máxima para o conteúdo dentro do cabeçalho */
+header .container {
+    max-width: 1200px; /* Defina o valor desejado para a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
 }
 
 /* Estilos para a logo */
 .logo img {
-    width: 100px; /* Tamanho da logo*/
+    width: 100px; /* Tamanho da logo */
     height: auto;
     vertical-align: middle;
 }
@@ -22,7 +38,7 @@ nav {
 }
 
 nav ul {
-    list-style: none; /* Remover marcadores de lista */
+    list-style-type: none; /* Remover marcadores de lista */
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -46,27 +62,71 @@ nav ul li a:hover {
 /* Estilos para a barra de pesquisa */
 .search-container {
     position: absolute;
-    top: 50%; /* Alinhar ao centro verticalmente */
-    right: 20px; /* Distância do lado direito */
+    top: 100%; /* Alinhar ao centro verticalmente */
+    right: 100px; /* Distância do lado direito */
     transform: translateY(-50%); /* Correção para centralizar */
 }
 
 .search-container input[type="text"] {
-    padding: 8px 10px; /* Espaçamento interno */
-    border: 1px solid #ccc; /* Borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    font-size: 14px; /* Tamanho da fonte */
+    width: 400px; /* Largura da barra de pesquisa */
+    padding: 8px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.search-container button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 8px 15px; /* Espaçamento interno do botão */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de apontar */
+    margin-left: 5px; /* Espaçamento à esquerda do botão */
+    float: right;
+}
+.search-container input[type="text"] {
     width: 400px; /* Largura do campo de entrada */
 }
 
 .search-container button {
-    padding: 8px 15px; /* Espaçamento interno */
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    font-size: 14px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor de apontar */
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos para o formulário de contato */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
 }
 
 /* Estilos para o contêiner principal */
@@ -78,38 +138,7 @@ nav ul li a:hover {
     width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
 }
 
-/* Estilos para os produtos */
-.product {
-    border: hidden; /* Remove a borda dos produtos */
-    padding: 10px; /* Adiciona espaçamento interno aos produtos */
-    margin-bottom: 20px; /* Adiciona espaçamento inferior entre os produtos */
-    overflow: hidden; /* Limpa o comportamento float */
-}
-
-.product img {
-    max-width: 200px; /* Define a largura máxima da imagem do produto */
-    height: auto; /* Mantém a proporção da imagem */
-    float: left; /* Alinha a imagem à esquerda */
-    margin-right: 20px; /* Adiciona espaçamento à direita da imagem */
-}
-
-.product .product-details {
-    overflow: hidden; /* Limpa o comportamento float */
-}
-
-.product h2 {
-    margin-top: 0; /* Remove a margem superior do título do produto */
-}
-
-.product p {
-    margin-bottom: 10px; /* Adiciona espaçamento inferior entre os parágrafos do produto */
-}
-
-.btn {
-    background-color: #007bff; /* Define a cor de fundo do botão */
-    color: white; /* Define a cor do texto do botão */
-    padding: 10px 10px; /* Adiciona preenchimento ao botão */
-    border: none; /* Remove a borda do botão */
-    cursor: pointer; /* Altera o cursor ao passar o mouse sobre o botão */
-    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+/* Espaçamento superior para o contêiner */
+.container {
+    padding-top: 200px; /* Ajuste conforme necessário para criar o espaço entre o cabeçalho e o formulário */
 }
