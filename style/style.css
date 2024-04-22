@@ -1,7 +1,6 @@
 /* Estilos gerais */
 body {
-
-    background-color: #7bb6f6;
+    background-color: #e0f2f8; /* Alterado para manter a consistência */
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -17,6 +16,7 @@ header {
     top: 0; /* Alinha o cabeçalho no topo da janela */
     left: 0; /* Alinha o cabeçalho à esquerda da janela */
     z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+    border-radius: 0 0 20px 20px; /* Arredondado apenas na parte inferior */
 }
 
 /* Definindo a largura máxima para o conteúdo dentro do cabeçalho */
@@ -75,7 +75,7 @@ nav ul li a:hover {
 }
 
 .search-container button {
-    background-color: #007bff; /* Cor de fundo do botão */
+    background-color: #4CAF50; /* Alterado para manter a harmonia */
     color: white; /* Cor do texto do botão */
     padding: 8px 15px; /* Espaçamento interno do botão */
     border: none; /* Sem borda */
@@ -84,61 +84,7 @@ nav ul li a:hover {
     margin-left: 5px; /* Espaçamento à esquerda do botão */
     float: right;
 }
-.search-container input[type="text"] {
-    width: 400px; /* Largura do campo de entrada */
-}
 
-.search-container button {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-}
-
-/* Estilos para o formulário de contato */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-form input[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-/* Estilos para o contêiner principal */
-.container {
-    max-width: 800px; /* Define a largura máxima do contêiner */
-    margin: 20px auto; /* Centraliza o contêiner horizontalmente */
-    padding: 0 10px; /* Adiciona espaçamento interno ao contêiner */
-    display: inline-block; /* Alinha o contêiner à esquerda */
-    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
-}
-
-/* Espaçamento superior para o contêiner */
-.container {
-    padding-top: 200px; /* Ajuste conforme necessário para criar o espaço entre o cabeçalho e o formulário */
+.search-container button:hover {
+    background-color: #45a049; /* Alterado para manter a harmonia */
 }

@@ -4,42 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
-    <link rel="shortcut icon" href="imagens/book.icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css">
+    <style>
+        body {
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif; /* Fonte arredondada */
+            background-color: #e0f2f8; /* Azul bebê suave para o fundo */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4a90e2; /* Azul mais escuro para o cabeçalho */
+            color: #fff;
+            padding: 10px 0; /* Espaçamento interno */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+            text-align: center;
+            border-radius: 0 0 20px 20px; /* Arredondado apenas na parte inferior */
+        }
+
+        .logo img {
+            width: 100px; /* Tamanho da logo */
+            height: auto;
+            vertical-align: middle;
+            cursor: pointer; /* Cursor de apontar */
+        }
+
+        .logo img:hover {
+            transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+        }
+
+        .container {
+            background-color: #ffffff; /* Branco para a caixa de conteúdo */
+            padding: 40px; /* Aumento do espaçamento interno */
+            border-radius: 20px; /* Aumento do raio de borda */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 50px; /* Espaçamento superior */
+            max-width: 600px; /* Largura máxima */
+            margin-left: auto; /* Centralização horizontal */
+            margin-right: auto; /* Centralização horizontal */
+        }
+
+        h2 {
+            color: #4a90e2; /* Azul confortável para o título */
+        }
+
+        label,
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        input[type="submit"] {
+            margin-bottom: 20px; /* Aumento do espaçamento entre os elementos */
+            display: block;
+            width: calc(100% - 30px); /* Ajuste da largura para considerar a borda */
+            padding: 15px; /* Aumento do padding */
+            border: 2px solid #4a90e2; /* Borda mais animada */
+            border-radius: 10px; /* Aumento do raio de borda */
+            box-sizing: border-box;
+            font-size: 16px; /* Ajuste do tamanho da fonte */
+            font-family: 'Comic Sans MS', cursive; /* Fonte animada */
+        }
+
+        input[type="submit"] {
+            background-color: #4a90e2; /* Azul confortável para o botão de enviar */
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transição suave */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #357ae8; /* Azul mais escuro ao passar o mouse */
+        }
+    </style>
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
-        <a href="bookSpace.html">
-            <div class="logo">
-                <img src="imagens/bookSpaceLogo.png" alt="Logo do BookSpace">
-            </div>
+        <a href="bookSpace.html" class="logo">
+            <img src="imagens/bookSpaceLogo.png" alt="Logo do BookSpace">
         </a>
-        
-        <!-- Navegação principal -->
-        <nav>
-            <ul>
-                <li><a href="bookSpace.html">Início</a></li>
-                <li><a href="/trocas">Trocas</a></li>
-            </ul>
-        </nav>
     </header>
-
-    <!-- Conteúdo da página -->
-    <div style="padding: 50px; padding-top: 200px;">
-        
-        <h2 style="text-align: center; color: rgb(0, 0, 0);">Fale Conosco</h2>
-        
+    <div class="container">
+        <h2>Fale Conosco</h2>
         <form action="https://formspree.io/f/xrgnrabq" method="POST">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
-
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
             <label for="message">Mensagem:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-
             <input type="submit" value="Enviar">
         </form>
     </div>

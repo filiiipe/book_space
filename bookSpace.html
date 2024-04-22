@@ -6,31 +6,98 @@
     <title>BookSpace - Sua ferramenta de troca e venda de livros</title>
     <link rel="shortcut icon" href="imagens/book.icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css"> <!-- Link para o arquivo de estilos CSS externo -->
+    <style>
+        body {
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif; /* Fonte arredondada */
+            background-color: #e0f2f8; /* Azul bebê suave para o fundo */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #e0f2f8; /* Mesma cor de fundo da página de contato */
+            color: #fff;
+            padding: 10px 0; /* Espaçamento interno */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+            text-align: center;
+            border-radius: 0 0 20px 20px; /* Arredondado apenas na parte inferior */
+            position: relative; /* Posição relativa para alinhar o botão */
+        }
+
+        .logo img {
+            width: 100px; /* Tamanho da logo */
+            height: auto;
+            vertical-align: middle;
+            cursor: pointer; /* Cursor de apontar */
+            border-radius: 50%; /* Borda arredondada */
+        }
+
+        .logo img:hover {
+            transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+        }
+
+        .search-container {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        .search-container input[type="text"] {
+            width: 200px; /* Largura da barra de pesquisa */
+            padding: 8px; /* Espaçamento interno */
+            border: 2px solid #4a90e2; /* Borda animada */
+            border-radius: 20px; /* Borda arredondada */
+            transition: border-color 0.3s ease; /* Transição suave */
+        }
+
+        .search-container input[type="text"]:focus {
+            border-color: #357ae8; /* Mudança de cor ao focar */
+        }
+
+        .search-container button {
+            background-color: #4a90e2; /* Cor do botão de pesquisa */
+            color: #fff;
+            padding: 8px 15px; /* Espaçamento interno do botão */
+            border: none; /* Sem borda */
+            border-radius: 20px; /* Borda arredondada */
+            cursor: pointer; /* Cursor de apontar */
+            transition: background-color 0.3s ease; /* Transição suave */
+        }
+
+        .search-container button:hover {
+            background-color: #357ae8; /* Cor mais escura ao passar o mouse */
+        }
+
+        .contact-btn {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            background-color: #4a90e2; /* Cor do botão de contato */
+            color: #fff;
+            padding: 8px 15px; /* Espaçamento interno do botão */
+            border: none; /* Sem borda */
+            border-radius: 20px; /* Borda arredondada */
+            cursor: pointer; /* Cursor de apontar */
+            transition: background-color 0.3s ease; /* Transição suave */
+        }
+
+        .contact-btn:hover {
+            background-color: #357ae8; /* Cor mais escura ao passar o mouse */
+        }
+    </style>
 </head>
 <body>
-    <!-- Cabeçalho da página -->
     <header>
-        <!-- Logo do BookSpace, link para a página inicial -->
-        
-            <div class="logo">
-                <img src="imagens/bookSpaceLogo.png" alt="Logo do BookSpace">
-            </div>
-        
-        <!-- Barra de pesquisa -->
+        <a href="bookSpace.html" class="logo">
+            <img src="imagens/bookSpaceLogo.png" alt="Logo do BookSpace">
+        </a>
+        <a href="contact_us.html" class="contact-btn">Fale Conosco</a>
         <div class="search-container">
             <form action="/search" method="get">
                 <input type="text" name="q" placeholder="Pesquisar...">
                 <button type="submit">Pesquisar</button>
             </form>
         </div>
-        <!-- Navegação principal -->
-        <nav>
-            <ul>
-                <li><a href="/trocas">Trocas</a></li>
-                <li><a href="contact_us.html">Ajuda</a></li>
-            </ul>
-        </nav>
-    </header>
-
-</body>
-</html>
+    </header
