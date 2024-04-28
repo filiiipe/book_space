@@ -39,12 +39,12 @@
         .search-container {
             position: absolute;
             top: 50%;
-            right: 20px;
+            right:14%;
             transform: translateY(-50%);
         }
 
         .search-container input[type="text"] {
-            width: 200px; /* Largura da barra de pesquisa */
+            width: 300px; /* Largura da barra de pesquisa */
             padding: 8px; /* Espaçamento interno */
             border: 2px solid #4a90e2; /* Borda animada */
             border-radius: 20px; /* Borda arredondada */
@@ -72,8 +72,10 @@
         .contact-btn {
             position: absolute;
             top: 50%;
-            left: 20px;
+            left: 20px; /* Posiciona o botão de contato à esquerda com 20px de margem */
             transform: translateY(-50%);
+            width: 100px; /* Largura igual para ambos os botões */
+            height: 20px; /* Altura igual para ambos os botões */
             background-color: #4a90e2; /* Cor do botão de contato */
             color: #fff;
             padding: 8px 15px; /* Espaçamento interno do botão */
@@ -86,18 +88,38 @@
         .contact-btn:hover {
             background-color: #357ae8; /* Cor mais escura ao passar o mouse */
         }
+
+        .login-btn {
+            position: absolute;
+            top: 50%;
+            height: 20px;
+            width: 100px;
+            right: 20px;
+            transform: translateY(-50%);
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer; /* Cursor de apontar */
+            transition: background-color 0.3s ease; /* Transição suave */
+        }
+
     </style>
 </head>
-<body>
-    <header>
-        <a href="bookSpace.html" class="logo">
-            <img src="imagens/bookSpaceLogo.png" alt="Logo do BookSpace">
-        </a>
-        <a href="contact_us.html" class="contact-btn">Fale Conosco</a>
-        <div class="search-container">
-            <form action="/search" method="get">
-                <input type="text" name="q" placeholder="Pesquisar...">
-                <button type="submit">Pesquisar</button>
-            </form>
-        </div>
-    </header
+
+<header>
+    <a href="bookSpace.html" class="logo">
+     <img src="imagens/bookSpaceLogo.png" alt="Logo do BookSpace">
+    </a>
+    <a href="contact_us.html" class="contact-btn">Fale Conosco</a>
+    <a href="login.html" class="login-btn">Entrar</a>
+
+    <div class="search-container">
+        <form action="/search" method="get">
+            <input type="text" name="q" placeholder="Pesquisar...">
+            <button type="submit">Pesquisar</button>   
+        </form>
+    </div>
+
+</header>
