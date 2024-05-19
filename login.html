@@ -3,99 +3,68 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Entrar</title>
-<style>
-
-    body {
-        font-family: 'Arial Rounded MT Bold', Arial, sans-serif; /* Fonte arredondada */
-        background-color: #e0f2f8; /* Azul bebê suave para o fundo */
-        margin: 0;
-        padding: 0;
-    }
-
-    header {
-        background-color: #e0f2f8; /* Azul mais escuro para o cabeçalho */
-        color: #fff;
-        padding: 10px 0; /* Espaçamento interno */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
-        text-align: center;
-        border-radius: 0 0 20px 20px; /* Arredondado apenas na parte inferior */
-    }
-
-    .logo img {
-        width: 100px; /* Tamanho da logo */
-        height: auto;
-        vertical-align: middle;
-        cursor: pointer; /* Cursor de apontar */
-    }
-
-    .logo img:hover {
-        transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
-    }
-
-</style>
+    <link rel="stylesheet" href="loginStyle/style.css">
+    <title>Login</title>
 </head>
 
 <body>
-
-    <header>
-        <a href="bookSpace.html" class="logo">
-            <img src="imagens/bookSpaceLogo.png" alt="Logo do BookSpace">
-        </a>
-    </header>
-
-    <div class="container" id="container">
-        <div class="form-container sign-up">
-            <form>
-                <h1>Criar Conta</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                   
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span>ou use seu e-mail para registro</span>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="E-mail">
-                <input type="password" placeholder="Senha">
-                <button>Cadastrar-se</button>
-            </form>
+    <div class="header">
+        <div class="logo">
+            <a href="bookSpace.html">
+                <img src="imagens/bookSpaceLogo.png" alt="">
+            </a>
         </div>
-        <div class="form-container sign-in">
+    </div>
+
+    <div class="login_body">
+        <div class="login_box">
+            <h2>Entrar</h2>
             <form>
-                <h1>Entrar</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                <div class="input_box">
+                    <input required type="email" placeholder="Email ou número de telefone">
                 </div>
-                <span>ou use seu e-mail e senha</span>
-                <input type="email" placeholder="E-mail">
-                <input type="password" placeholder="Senha">
-                <a href="#">Esqueceu sua senha?</a>
-                <button>Entrar</button>
+
+                <div class="input_box">
+                    <input required type="password" placeholder="Senha">
+                </div>
+
+                <div>
+                    <button class="submit">
+                        Entrar
+                    </button>
+                </div>
             </form>
-        </div>
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Bem-vindo de Volta!</h1>
-                    <p>Insira seus detalhes pessoais para usar todos os recursos do site</p>
-                    <button class="hidden" id="login">Entrar</button>
+
+            <div class="support">
+                <div class="remember">
+                    <span><input type="checkbox" style="margin: 0;padding: 0; height: 13px;"></span>
+                    <span>Lembre-se de mim</span>
                 </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Olá, Leitor!</h1>
-                    <p>Registre-se com seus detalhes pessoais para usar todos os recursos do site</p>
-                    <button class="hidden" id="register">Cadastrar-se</button>
+                <div class="help">
+                    <a href="#">
+                        Precisa de ajuda?
+                    </a>
+                </div>
+            </div>
+
+            <div class="login_footer">
+                <div class="login_facebook">
+                    <span><img height="20px" src="imagens/Facebook_logo.png" alt="facebook"></span>
+                    <span><a href="#">Conectar com Facebook</a></span>
+                </div>
+
+                <div class="sign_up">
+                    <p>Novo por aqui? <a href="#"> Entre agora.</a></p>
+                </div>
+
+                <div class="terms">
+                    <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais</a></p>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 
 </html>

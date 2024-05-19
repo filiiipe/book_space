@@ -1,92 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookSpace - Sua ferramenta de troca e venda de livros</title>
     <link rel="shortcut icon" href="imagens/book.icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css"> <!-- Link para o arquivo de estilos CSS externo -->
+    <link rel="stylesheet" href="style/style.css">
     <style>
-        body {
-            font-family: 'Arial Rounded MT Bold', Arial, sans-serif; /* Fonte arredondada */
-            background-color: #e0f2f8; /* Azul bebê suave para o fundo */
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #e0f2f8; /* Mesma cor de fundo da página de contato */
-            color: #fff;
-            padding: 10px 0; /* Espaçamento interno */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
-            text-align: center;
-            border-radius: 0 0 20px 20px; /* Arredondado apenas na parte inferior */
-            position: relative; /* Posição relativa para alinhar o botão */
-        }
-
-        .logo img {
-            width: 100px; /* Tamanho da logo */
-            height: auto;
-            vertical-align: middle;
-            cursor: pointer; /* Cursor de apontar */
-            border-radius: 50%; /* Borda arredondada */
-        }
-
-        .logo img:hover {
-            transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
-        }
+        /* Barra de pesquisa*/
 
         .search-container {
-            position: absolute;
-            top: 50%;
-            right:14%;
-            transform: translateY(-50%);
+            padding: 20px;
         }
 
         .search-container input[type="text"] {
-            width: 300px; /* Largura da barra de pesquisa */
-            padding: 8px; /* Espaçamento interno */
-            border: 2px solid #4a90e2; /* Borda animada */
-            border-radius: 20px; /* Borda arredondada */
-            transition: border-color 0.3s ease; /* Transição suave */
+            width: 200px;
+            /* Largura da barra de pesquisa */
+            padding: 8px;
+            /* Espaçamento interno */
+            border: 2px solid #4a90e2;
+            /* Borda animada */
+            border-radius: 20px;
+            /* Borda arredondada */
+            transition: border-color 0.3s ease;
+            /* Transição suave */
         }
 
         .search-container input[type="text"]:focus {
-            border-color: #357ae8; /* Mudança de cor ao focar */
+            border-color: #357ae8;
+            /* Mudança de cor ao focar */
         }
 
         .search-container button {
-            background-color: #4a90e2; /* Cor do botão de pesquisa */
+            background-color: #4a90e2;
+            /* Cor do botão de pesquisa */
             color: #fff;
-            padding: 8px 15px; /* Espaçamento interno do botão */
-            border: none; /* Sem borda */
-            border-radius: 20px; /* Borda arredondada */
-            cursor: pointer; /* Cursor de apontar */
-            transition: background-color 0.3s ease; /* Transição suave */
+            padding: 8px 15px;
+            /* Espaçamento interno do botão */
+            border: none;
+            /* Sem borda */
+            border-radius: 20px;
+            /* Borda arredondada */
+            cursor: pointer;
+            /* Cursor de apontar */
+            transition-duration: 0.7s;
+            /* Transição suave */
         }
 
         .search-container button:hover {
-            background-color: #357ae8; /* Cor mais escura ao passar o mouse */
+            background-color: #1b54b1;
+            /* Cor mais escura ao passar o mouse */
+        }
+
+        .search-container button:active {
+            background-color: #0f3675;
+            /*Muda a cor ao clicar*/
         }
 
         .contact-btn {
             position: absolute;
             top: 50%;
-            left: 20px; /* Posiciona o botão de contato à esquerda com 20px de margem */
+            right: 180px;
+            /* Posiciona o botão de contato à esquerda com 20px de margem */
             transform: translateY(-50%);
-            width: 100px; /* Largura igual para ambos os botões */
-            height: 20px; /* Altura igual para ambos os botões */
-            background-color: #4a90e2; /* Cor do botão de contato */
+            width: 100px;
+            /* Largura */
+            height: 20px;
+            /* Altura igual para ambos os botões */
+            background-color: #4a90e2;
+            /* Cor do botão de contato */
             color: #fff;
-            padding: 8px 15px; /* Espaçamento interno do botão */
-            border: none; /* Sem borda */
-            border-radius: 20px; /* Borda arredondada */
-            cursor: pointer; /* Cursor de apontar */
-            transition: background-color 0.3s ease; /* Transição suave */
+            padding: 8px 15px;
+            /* Espaçamento interno do botão */
+            border: none;
+            /* Sem borda */
+            border-radius: 20px;
+            /* Borda arredondada */
+            cursor: pointer;
+            /* Cursor de apontar */
+            transition-duration: 0.7s;
+            /* Transição suave */
+            text-decoration: none;
         }
 
         .contact-btn:hover {
-            background-color: #357ae8; /* Cor mais escura ao passar o mouse */
+            background-color: #1b54b1;
+            /* Cor mais escura ao passar o mouse */
+        }
+
+        .contact-btn:active {
+            background-color: #0f3675;
+            /* Muda a cor ao clicar*/
         }
 
         .login-btn {
@@ -94,23 +99,35 @@
             top: 50%;
             height: 20px;
             width: 100px;
-            right: 20px;
+            right: 40px;
             transform: translateY(-50%);
             background-color: #4a90e2;
             color: #fff;
             padding: 8px 15px;
             border: none;
             border-radius: 20px;
-            cursor: pointer; /* Cursor de apontar */
-            transition: background-color 0.3s ease; /* Transição suave */
+            cursor: pointer;
+            /* Cursor de apontar */
+            transition-duration: 0.7s;
+            text-decoration: none;
         }
 
+        .login-btn:hover {
+            background-color: #1b54b1;
+            /* Cor mais escura ao passar o mouse */
+
+        }
+
+        .login-btn:active {
+            background-color: #0f3675;
+            /* Muda a cor ao clicar*/
+        }
     </style>
 </head>
 
 <header>
     <a href="bookSpace.html" class="logo">
-     <img src="imagens/bookSpaceLogo.png" alt="Logo do BookSpace">
+        <img src="imagens/bookSpaceLogo.png" alt="Logo do BookSpace">
     </a>
     <a href="contact_us.html" class="contact-btn">Fale Conosco</a>
     <a href="login.html" class="login-btn">Entrar</a>
@@ -118,7 +135,7 @@
     <div class="search-container">
         <form action="/search" method="get">
             <input type="text" name="q" placeholder="Pesquisar...">
-            <button type="submit">Pesquisar</button>   
+            <button type="submit" class="input-fixado">Pesquisar</button>
         </form>
     </div>
 

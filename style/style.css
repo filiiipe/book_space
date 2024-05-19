@@ -1,22 +1,28 @@
 /* Estilos gerais */
 body {
-    background-color: #e0f2f8; /* Alterado para manter a consistência */
+    background-color: #e0f2f8;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Estilos para o cabeçalho */
+/* Cabeçalho */
 header {
-    background-color: #16004d; /* Cor de fundo do cabeçalho */
     color: #fff;
     padding: 10px 0; /* Espaçamento interno reduzido */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
     position: fixed; /* Fixa o cabeçalho na parte superior da página */
     width: 100%; /* Largura total */
+    height: 80px;
     top: 0; /* Alinha o cabeçalho no topo da janela */
     left: 0; /* Alinha o cabeçalho à esquerda da janela */
-    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos*/
+    background-color: #e0f2f8;
+    color: #fff;
+    padding: 10px 0; /* Espaçamento interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center;
     border-radius: 0 0 20px 20px; /* Arredondado apenas na parte inferior */
+    position: relative; /* Posição relativa para alinhar o botão */
 }
 
 /* Definindo a largura máxima para o conteúdo dentro do cabeçalho */
@@ -26,11 +32,23 @@ header .container {
 }
 
 /* Estilos para a logo */
-.logo img {
-    width: 100px; /* Tamanho da logo */
-    height: auto;
-    vertical-align: middle;
+
+.logo {
+    float: left; /* Posiciona a logo à esquerda */
+    left: 40px;
 }
+
+.logo img {
+    text-align: left;
+    width: 100px; 
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+}
+
 
 /* Estilos para a navegação principal */
 nav {
@@ -57,34 +75,4 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline; /* Sublinhar ao passar o mouse */
-}
-
-/* Estilos para a barra de pesquisa */
-.search-container {
-    position: absolute;
-    top: 100%; /* Alinhar ao centro verticalmente */
-    right: 100px; /* Distância do lado direito */
-    transform: translateY(-50%); /* Correção para centralizar */
-}
-
-.search-container input[type="text"] {
-    width: 400px; /* Largura da barra de pesquisa */
-    padding: 8px; /* Espaçamento interno */
-    border: none; /* Sem borda */
-    border-radius: 4px; /* Bordas arredondadas */
-}
-
-.search-container button {
-    background-color: #4CAF50; /* Alterado para manter a harmonia */
-    color: white; /* Cor do texto do botão */
-    padding: 8px 15px; /* Espaçamento interno do botão */
-    border: none; /* Sem borda */
-    border-radius: 4px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de apontar */
-    margin-left: 5px; /* Espaçamento à esquerda do botão */
-    float: right;
-}
-
-.search-container button:hover {
-    background-color: #45a049; /* Alterado para manter a harmonia */
 }
