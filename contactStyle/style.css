@@ -6,39 +6,52 @@
 }
 
 .logo img {
-    float: left;
-    /* Posiciona a logo à esquerda */
-    left: 40px;
     width: 100px;
     height: auto;
     vertical-align: middle;
     cursor: pointer;
+    border-radius: 50%;
+    margin-right: 40px; /* Adiciona margem à direita para evitar sobreposição */
 }
 
 body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: #e0f2f8;
+    background: #38B6FF;
 }
 
 section {
+    padding: 60px;
+    max-width: 450px;
+    height: 550px;
+    position: relative;
+    background-color: #8cd1f9;
+    border-radius: 10px;
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding: 10px 45px;
-    background: #8cd1f9;
-    width: 500px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-section h2 {
-    color: #f5f5f5;
-    font-size: 2.5rem;
-    margin: 2rem;
+.title {
+    color: #fff;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    text-align: center;
 }
+
 
 section form {
     display: flex;
@@ -47,33 +60,25 @@ section form {
 }
 
 form label {
-    color: #f5f5f5;
+    color: #fff;
     font-size: 17px;
     margin-bottom: 4px;
 }
 
-form input {
+form input,
+form textarea {
     padding: 15px;
     outline: none;
     border: 0;
     margin-bottom: 20px;
     font-size: 15px;
     transition: all 0.5s;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
 }
 
-form input:focus {
-    border-radius: 16px;
-}
-
-form textarea {
-    padding: 10px;
-    outline: none;
-    border: 0;
-    font-size: 15px;
-    margin-bottom: 30px;
-    transition: all 0.5s;
-}
-
+form input:focus,
 form textarea:focus {
     border-radius: 16px;
 }
@@ -85,46 +90,12 @@ form button {
     background: #234d7c;
     border-radius: 3px;
     font-weight: bold;
-    color: #f5f5f5;
+    color: #fff;
     margin-bottom: 10px;
+    border: none;
 }
 
 form button:hover {
     background-color: #124e6a;
     cursor: pointer;
-}
-
-/*Página do Obrigado*/
-
-.main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #101026;
-    flex-direction: column;
-}
-
-.text {
-    font-size: 45px;
-    color: #f5f5f5;
-    margin-bottom: 30px;
-}
-
-.paragrafo {
-    color: #f5f5f5;
-    margin-bottom: 50px;
-}
-
-.btn {
-    padding: 15px 55px;
-    background: #f5f5f5;
-    text-decoration: none;
-    color: #101026;
-    font-size: 18px;
-    transition: all 0.5s;
-}
-
-.btn:hover {
-    border-radius: 16px;
 }
