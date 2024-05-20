@@ -10,8 +10,10 @@
     height: auto;
     vertical-align: middle;
     cursor: pointer;
-    border-radius: 50%;
     margin-right: 40px; /* Adiciona margem à direita para evitar sobreposição */
+    position: absolute;
+    left: 50px;
+    bottom: 835px;
 }
 
 body {
@@ -33,18 +35,18 @@ section {
     max-width: 450px;
     height: 550px;
     position: relative;
-    background-color: #8cd1f9;
+    background-color: #fbfbfbbf;
     border-radius: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.192) 0px 2px 4px, rgba(0, 0, 0, 0.216) 0px 7px 13px -3px, rgba(0, 0, 0, 0.167) 0px -3px 0px inset;
 }
 
 .title {
-    color: #fff;
+    color: #000000;
     font-size: 32px;
     margin-top: 0;
     margin-bottom: 2rem;
@@ -60,14 +62,13 @@ section form {
 }
 
 form label {
-    color: #fff;
+    color: #000000;
     font-size: 17px;
     margin-bottom: 4px;
 }
 
-form input,
-form textarea {
-    padding: 15px;
+form input,form textarea {
+    padding: 13px;
     outline: none;
     border: 0;
     margin-bottom: 20px;
@@ -84,10 +85,10 @@ form textarea:focus {
 }
 
 form button {
-    padding: 15px;
+    padding: 10px;
     cursor: pointer;
     font-size: 16px;
-    background: #234d7c;
+    background: #1679ea;
     border-radius: 3px;
     font-weight: bold;
     color: #fff;
@@ -96,6 +97,6 @@ form button {
 }
 
 form button:hover {
-    background-color: #124e6a;
+    background-color: #116fda;
     cursor: pointer;
 }

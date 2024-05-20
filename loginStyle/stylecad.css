@@ -159,22 +159,6 @@ body::before {
     color: rgb(4, 4, 83);
 }
 
-.login_facebookCad{
-    margin-right: 10px;
-    font-size: 13px;
-    
-    
-}
-
-.login_facebookCad:hover{
-    text-decoration: underline;
-    color: #080a9d;
-}
-
-.login_facebookCad span a{
-    text-decoration: none;
-    color: rgb(4, 4, 83);
-}
 
 .sign_up {
     color: #000000;
@@ -206,6 +190,3 @@ body::before {
 .terms a:hover {
     text-decoration: underline;
 }
-
-
-
