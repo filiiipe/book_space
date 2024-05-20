@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"crossorigin="anonymous">
-    <title>BookSpace - Sua ferramenta de troca e venda de livros</title>
-    <link rel="shortcut icon" href="imagens/book.icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css"> <!-- Link para o arquivo de estilos CSS externo -->
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous">
+        <title>BookSpace - Sua ferramenta de troca e venda de livros</title>
+        <link rel="shortcut icon" href="imagens/book.icon.png"
+            type="image/x-icon">
+        <link rel="stylesheet" href="style/style.css">
+        <!-- Link para o arquivo de estilos CSS externo -->
+        <style>
         body {
             font-family: 'Arial Rounded MT Bold', Arial, sans-serif; /* Fonte arredondada */
             background-color: #e0f2f8; /* Azul bebê suave para o fundo */
             margin: 0;
             padding: 0;
+
         }
+        
 
         header {
             background-color: #e0f2f8; /* Mesma cor de fundo da página de contato */
@@ -106,21 +113,23 @@
             transition: background-color 0.3s ease; /* Transição suave */
         }
 
+ 
     </style>
-</head>
+    </head>
 
-<header>
-    <a href="bookSpace.html" class="logo">
-     <img src="imagens/bookSpaceLogo.png" alt="Logo do BookSpace">
-    </a>
-    <a href="contact_us.html" class="contact-btn">Fale Conosco</a>
-    <a href="login.html" class="login-btn">Entrar</a>
+    <body>
+        <header>
+            <a href="bookSpace.html" class="logo">
+                <img src="imagens/bookSpaceLogo.png" alt="Logo do BookSpace">
+            </a>
+            <a href="contact_us.html" class="contact-btn">Fale Conosco</a>
+            <a href="login.html" class="login-btn">Entrar</a>
 
-    <div class="search-container">
-        <form action="/search" method="get">
-            <input type="text" name="q" placeholder="Pesquisar...">
-            <button type="submit">Pesquisar</button>   
-        </form>
-    </div>
-
-</header>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" name="q" placeholder="Pesquisar...">
+                    <button type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </body>
+    </header>
