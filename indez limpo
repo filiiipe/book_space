@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSpace</title>
+    <link rel="shortcut icon" href="./imgs/book.icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+    <header>
+        <a href="./pages/contactUs/contact_us.html" class="logo">
+            <img src="imgs/logo.png" alt="Logo do BookSpace">
+        </a>
+
+        <!-- BOA PRÁTICA: USAR CLASSES PARA DEFINIR DIVS E ELEMENTOS NO GERAL -->
+        <div > 
+            <ul class="navLinks">
+                <li class="navLink-individual"><a href="#">Romances</a></li>
+                <li class="navLink-individual"><a href="#">Terror</a></li>
+                <li class="navLink-individual"><a href="#">Best Seller</a></li>
+                <li class="navLink-individual"><a href="#">Infantil</a></li>
+                <li class="navLink-individual"><a href="#">Ficção</a></li>
+                <li class="navLink-individual"><a href="#">Colecionador</a></li>
+            </ul>
+        </div>
+        
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" name="q" placeholder="Pesquisar...">
+                <button type="submit" class="input-fixado"><img src="imgs/search-icon.svg" alt="" style="width: 35px"></button>
+            </form>
+        </div>
+    </header>
+    
+    <div class="placeholderDiv">
+        
+    </div>
+        <footer class="py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card text-white">
+                            <div class="card-body">
+                                <h2>Book Space</h2>
+                                <p class="card-text">O melhor website para trocar seus livros.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card text-white">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Fale conosco</b></h5>
+                                <p class="card-text">contato@bookspace.com.br</p>
+                                <p class="card-text">Rua Exemplo, 123, Cidade, Estado</p>
+                                <p class="card-text"> (34) 9 9944-71786</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">Nossas redes sociais</h5>
+                                <ul class="footericons" style="gap:0; justify-content: left;">
+                                    <li class="navLink-individual">
+                                        <a href="https://instagram.com" target="_blank" class="mx-2">
+                                             <i class="bi bi-instagram social-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="navLink-individual">
+                                        <a href="https://twitter.com" target="_blank" class="mx-2">
+                                            <i class="bi bi-twitter social-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="navLink-individual">
+                                        <a href="https://www.skoob.com.br/" target="_blank" class="mx-2">
+                                            <i><img src="imgs/skoob.icon.svg" style="width:30px;"></i>
+                                        </a> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
