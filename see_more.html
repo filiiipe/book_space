@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Livro</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Incluir folha de estilo CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #131921;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .book-details {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .book-cover img {
+            max-width: 300px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .book-info {
+            flex: 1;
+        }
+
+        .book-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .author {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #0066c0;
+        }
+
+        .star-rating {
+            margin-bottom: 10px;
+        }
+
+        .star-rating .star {
+            color: #ffcc00;
+            /* Cor das estrelas */
+        }
+
+        .star-rating .text {
+            color: #333;
+            /* Cor do texto */
+        }
+
+        .summary {
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .button {
+            width: 200px;
+            display: block;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            background-color: #0066c0;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .highlights {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+        }
+
+        .highlight {
+            margin-bottom: 20px;
+        }
+
+        .highlight p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .highlights {
+            margin-top: 50px;
+        }
+
+        .highlight-cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .highlight-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .highlight-quote {
+            font-style: italic;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .highlights {
+            margin-top: 50px;
+        }
+
+        .highlight {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .user-info {
+            margin-right: 20px;
+        }
+
+        .user-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .user-info p {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .user-review {
+            margin-top: 20px;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-review h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .user-review form input,
+        .user-review form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-review form button {
+            background-color: #0066c0;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .user-review form button:hover {
+            background-color: #0050a1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Seu cabeçalho aqui -->
+        <h1>Detalhes do Livro</h1>
+    </header>
+
+    <main class="container">
+        <div class="book-details">
+            <div class="book-cover">
+                <img src="imagens/aCabana.jpg" alt="Capa do Livro">
+            </div>
+            <div class="book-info">
+                <h2 class="book-title">A Cabana</h2>
+                <p class="author">Autor: William P. Young</p>
+                <p class="pages">Páginas: 240</p>
+                <div class="star-rating">
+                    Avaliação:
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="summary">
+                    A Cabana é um livro de ficção religiosa escrita por William P. Young. O livro foi publicado em 2007
+                    e conta a história de Mackenzie Allen Phillips, um homem que enfrenta uma tragédia pessoal e
+                    encontra Deus em um lugar inesperado. Com uma narrativa emocionante e mensagens poderosas, A Cabana
+                    se tornou um best-seller internacional.
+                </p>
+                <div class="buttons">
+                    <a href="#" class="button">Comprar</a>
+                    <a href="#" class="button">Trocar</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="highlights">
+            <h2>Destaques do Livro</h2>
+            <div class="highlight-cards">
+                <div class="highlight-card">
+                    <p class="highlight-quote">"Viver sem ser amado é como cortar as asas de um pássaro e tirar sua
+                        capacidade de voar."</p>
+                </div>
+                <div class="highlight-card">
+                    <p class="highlight-quote">"A graça não depende da existência do sofrimento, mas onde há sofrimento
+                        você encontrará a graça de inúmeras maneiras."</p>
+                </div>
+                <div class="highlight-card">
+                    <p class="highlight-quote">"Os relacionamentos não têm nada a ver com poder. Nunca! E um modo de
+                        evitar a vontade de exercer poder é escolher se limitar e servir."</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="highlights">
+            <h2>Opiniões</h2>
+            <div class="highlight">
+                <div class="user-info">
+                    <img src="imagens/usuario_bookSpace1.jpg" alt="Foto do usuário">
+                    <p>Fernanda</p>
+                </div>
+                <p>"Um livro emocionante que toca profundamente o coração dos leitores. Recomendo fortemente!"</p>
+            </div>
+            <div class="highlight">
+                <div class="user-info">
+                    <img src="imagens/usuario2.jpg" alt="Foto do usuário">
+                    <p>Murphy</p>
+                </div>
+                <p>"A Cabana me fez refletir sobre minha vida e minhas crenças. Uma leitura transformadora!"</p>
+            </div>
+            <div class="highlight">
+                <div class="user-info">
+                    <img src="imagens/usuario3.jpg" alt="Foto do usuário">
+                    <p>Smith</p>
+                </div>
+                <p>"Uma história cativante que nos faz questionar o significado da vida e do amor. Imperdível!"</p>
+            </div>
+            <div class="user-review">
+                <h3>Deixe sua opinião</h3>
+                <form action="#">
+                    <input type="text" placeholder="Seu nome">
+                    <textarea placeholder="Escreva sua opinião"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Seu rodapé aqui -->
+    </footer>
+</body>
+
+</html>

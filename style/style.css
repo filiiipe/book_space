@@ -1,6 +1,6 @@
 /* Estilos gerais */
 body {
-    background-color: #38B6FF;
+    background-color: #fff;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -8,71 +8,166 @@ body {
 /* Cabeçalho */
 header {
     color: #fff;
-    padding: 10px 0; /* Espaçamento interno reduzido */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
-    position: fixed; /* Fixa o cabeçalho na parte superior da página */
-    width: 100%; /* Largura total */
+    padding: 10px 0;
+    /* Espaçamento interno reduzido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    position: fixed;
+    /* Fixa o cabeçalho na parte superior da página */
+    width: 100%;
+    /* Largura total */
     height: 80px;
-    top: 0; /* Alinha o cabeçalho no topo da janela */
-    left: 0; /* Alinha o cabeçalho à esquerda da janela */
-    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos*/
-    background-color: #224f5e;
+    top: 0;
+    /* Alinha o cabeçalho no topo da janela */
+    left: 0;
+    /* Alinha o cabeçalho à esquerda da janela */
+    z-index: 1000;
+    /* Garante que o cabeçalho esteja acima de outros elementos*/
+    background-color: #131921;
     color: #fff;
-    padding: 10px 0; /* Espaçamento interno */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 10px 0;
+    /* Espaçamento interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra */
     text-align: center;
-    border-radius: 0 0 20px 20px; /* Arredondado apenas na parte inferior */
-    position: relative; /* Posição relativa para alinhar o botão */
+    border-radius: 0 0 20px 20px;
+    /* Arredondado apenas na parte inferior */
+    position: relative;
+    /* Posição relativa para alinhar o botão */
 }
 
 /* Definindo a largura máxima para o conteúdo dentro do cabeçalho */
 header .container {
-    max-width: 1200px; /* Defina o valor desejado para a largura máxima */
-    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    max-width: 1200px;
+    /* Defina o valor desejado para a largura máxima */
+    margin: 0 auto;
+    /* Centraliza o conteúdo horizontalmente */
 }
 
 /* Estilos para a logo */
 
 .logo {
-    float: left; /* Posiciona a logo à esquerda */
+    float: left;
+    /* Posiciona a logo à esquerda */
     left: 40px;
 }
 
 .logo img {
     text-align: left;
-    width: 100px; 
+    width: 100px;
     vertical-align: middle;
     cursor: pointer;
 }
 
 .logo img:hover {
-    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+    transform: scale(1.1);
+    /* Efeito de aumento ao passar o mouse */
 }
 
 
 /* Estilos para a navegação principal */
 nav {
-    text-align: center; /* Alinhamento do texto */
+    text-align: center;
+    /* Alinhamento do texto */
 }
 
 nav ul {
-    list-style-type: none; /* Remover marcadores de lista */
+    list-style-type: none;
+    /* Remover marcadores de lista */
     margin: 0;
     padding: 0;
     display: inline-block;
 }
 
 nav ul li {
-    display: inline-block; /* Dispor os itens em linha */
-    margin: 0 10px; /* Espaçamento entre os itens */
+    display: inline-block;
+    /* Dispor os itens em linha */
+    margin: 0 10px;
+    /* Espaçamento entre os itens */
 }
 
 nav ul li a {
-    color: #007bff; /* Cor do texto */
-    text-decoration: none; /* Remover sublinhado */
-    font-size: 16px; /* Tamanho da fonte */
+    color: #007bff;
+    /* Cor do texto */
+    text-decoration: none;
+    /* Remover sublinhado */
+    font-size: 16px;
+    /* Tamanho da fonte */
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Sublinhar ao passar o mouse */
+    text-decoration: underline;
+    /* Sublinhar ao passar o mouse */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+.card {
+    background-color: #add8e680;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #f8f8f8;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.ver-mais {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ver-mais:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilos para o contêiner do Banner */
+#carouselExampleSlidesOnly {
+    background-color: #add8e680;
+    width: 100%;
+    height: 200px;
+    max-width: 1200px;
+    /* Define a largura máxima do Carousel */
+    margin: 200px auto 20px auto;
+    /* Centraliza o Carousel horizontalmente */
+    border-radius: 10px;
+    /* Adiciona borda arredondada */
+    overflow: hidden;
+    /* Esconde o conteúdo que ultrapassa o Carousel */
+}
+
+/* Estilos para os itens do Banner */
+.carousel-item img {
+    width: 100%;
+    height: 200px;
+    /* Define a altura dos slides */
+    object-fit: contain;
+    /* Redimensiona a imagem para preencher o espaço do slide */
+    border-radius: 10px;
+    /* Adiciona borda arredondada aos slides */
 }
