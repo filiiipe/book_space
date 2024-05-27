@@ -121,6 +121,12 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.55);
 }
 
 .card img {
