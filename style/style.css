@@ -177,3 +177,37 @@ nav ul li a:hover {
     border-radius: 10px;
     /* Adiciona borda arredondada aos slides */
 }
+.classificacao{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    width: 80%; /* Adicionado para ajuste de largura */
+    margin: 10px auto; /* Adicionado para centralizar horizontalmente */
+    padding: 10px; /* Adicionado para espaçamento interno */
+    height: 20% auto;
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    .classificacao {
+        width: 100%; /* Ajustar para 100% em telas menores */
+        padding: 15px; /* Adicionado para maior espaçamento interno em telas menores */
+        height: 9900px;
+    }
+}
+.title2{
+    align-items: center;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    
+}
+.bemvindo {
+    background: #4a90e2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.8);
+}
