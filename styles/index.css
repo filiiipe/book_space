@@ -1,0 +1,191 @@
+/* Barra de pesquisa*/
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+/* SELECIONAR TUDO COM * PARA ZERAR O MARGIN E O PADDING. SE QUISER USAR PADDING E MARGIN EM ALGUMA COISA, USA SÓ NO QUE FOR PRECISO */
+
+p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks{
+    display: flex !important;
+    align-items: center !important;  
+    justify-content: space-evenly !important;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: inherit;
+    transition: all .4s ease;
+    font-size: large;
+    font-weight: 500;
+}
+
+.navLinks a:hover{
+    color: #0f3675;
+}
+
+.search-container {
+    padding: 20px;
+}
+
+.search-container input[type="text"] {
+    width: 200px;
+    /* Largura da barra de pesquisa */
+    padding: 8px;
+    /* Espaçamento interno */
+    border: 2px solid #38B6FF;
+    /* Borda animada */
+    border-radius: 20px;
+    /* Borda arredondada */
+    transition: border-color 0.3s ease;
+    /* Transição suave */
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #357ae8;
+    /* Mudança de cor ao focar */
+}
+
+.search-container button {
+    background: transparent;
+    /* Cor do botão de pesquisa */
+    color: #ffffff;
+    padding: 8px;
+    /* Espaçamento interno do botão */
+    border: none;
+    /* Sem borda */
+    border-radius: 50%;
+    /* Borda arredondada */
+    cursor: pointer;
+    /* Cursor de apontar */
+    transition-duration: 0.3s;
+    /* Transição suave */
+}
+
+.search-container button:hover {
+    background-color: #1b54b1;
+    /* Cor mais escura ao passar o mouse */
+}
+
+.search-container button:active {
+    background-color: #0f3675;
+    /*Muda a cor ao clicar*/
+}
+
+.contact-btn {
+    position: absolute;
+    top: 50%;
+    right: 180px;
+    /* Posiciona o botão de contato à esquerda com 20px de margem */
+    transform: translateY(-50%);
+    width: 100px;
+    /* Largura */
+    height: 20px;
+    /* Altura igual para ambos os botões */
+    background-color: #38B6FF;
+    /* Cor do botão de contato */
+    color: #fff;
+    padding: 8px 15px;
+    /* Espaçamento interno do botão */
+    border: none;
+    /* Sem borda */
+    border-radius: 20px;
+    /* Borda arredondada */
+    cursor: pointer;
+    /* Cursor de apontar */
+    transition-duration: 0.7s;
+    /* Transição suave */
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-color: #1b54b1;
+    /* Cor mais escura ao passar o mouse */
+}
+
+.login-btn {
+    position: absolute;
+    top: 50%;
+    height: 20px;
+    width: 100px;
+    right: 40px;
+    transform: translateY(-50%);
+    background-color: #38B6FF;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    /* Cursor de apontar */
+    transition-duration: 0.7s;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background-color: #1b54b1;
+    /* Cor mais escura ao passar o mouse */
+
+}
+
+.login-btn:active {
+    background-color: #0f3675;
+    /* Muda a cor ao clicar*/
+}
+
+.placeholderDiv{
+    height: 100vb;
+    width: 100vb;
+}
+
+/*footer*/
+
+footer {
+    background-color: #38B6FF !important;
+    color: white;
+    padding: 20px 0;
+}
+
+.card {
+    background-color: #38B6FF !important;
+    border: none;
+}
+
+.card-title, .card-text, .social-icon {
+    color: #fff;
+}
+
+.social-icon {
+    font-size: 1.5em;
+}
+
+footer img {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    color: rgb(255, 252, 252);
+}
+
+.footericons{
+    display: flex !important;
+    align-items: center !important;  
+    justify-content: left !important;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
