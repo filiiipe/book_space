@@ -19,7 +19,7 @@
             /* Largura da barra de pesquisa */
             padding: 8px;
             /* Espaçamento interno */
-            border: 2px solid #4a90e2;
+            border: 2px solid #365e8b;
             /* Borda animada */
             border-radius: 20px;
             /* Borda arredondada */
@@ -28,12 +28,12 @@
         }
 
         .search-container input[type="text"]:focus {
-            border-color: #357ae8;
+            border-color: #365e8b;
             /* Mudança de cor ao focar */
         }
 
         .search-container button {
-            background-color: #4a90e2;
+            background-color: #365e8b;
             /* Cor do botão de pesquisa */
             color: #fff;
             padding: 8px 15px;
@@ -68,7 +68,7 @@
             /* Largura */
             height: 20px;
             /* Altura igual para ambos os botões */
-            background-color: #4a90e2;
+            background-color: #365e8b;
             /* Cor do botão de contato */
             color: #fff;
             padding: 8px 15px;
@@ -101,7 +101,7 @@
             width: 100px;
             right: 40px;
             transform: translateY(-50%);
-            background-color: #4a90e2;
+            background-color: #365e8b;
             color: #fff;
             padding: 8px 15px;
             border: none;
@@ -147,7 +147,7 @@ a {
 }
     /* Estilo do botão animado */
     .animated-btn {
-            background-color: #4a90e2;
+            background-color: #365e8b;
             color: white;
             padding: 15px 30px;
             border: none;
@@ -180,53 +180,57 @@ a {
 
 </header>
 
-<body style="background-color: whitesmoke;">
+<body style="background-color: rgb(190, 190, 190);">
     <div class="bemvindo">
 <h1 class="title2" class="bemvindo">Seja bem vindo(a) leitor(a)!</h1>
 </div>
     <h2 class="classificacao">Veja abaixo os destaques da semana!</h2>
     <div class="card-container">
-        
+        <a href="see_more.html" class="ver-mais">  
         <div class="card">
             <img src="imagens/aCabana.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">A Cabana</h5>
-                <a href="see_more.html" class="ver-mais">Ver mais</a>
+                <h4 class="card-title">A Cabana - William P. Young </h4>
+            
+               <h2 class="card-price">Ver mais</h2>
             </div>
         </div>
-
-        <div class="card">
+    </a>
+    <a href="#" class="ver-mais">  
+    <div class="card">
             <img src="imagens/assimQueAcaba.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">É assim que acaba</h5>
-                <a href="#" class="ver-mais">Ver mais</a>
+                <h4 class="card-title">É assim que acaba</h4>
+                <h2 class="card-price">Ver mais</h2>
             </div>
         </div>
+    </a>
+       <a href="#" class="ver-mais">
 
-        <div class="card">
+         <div class="card">
             <img src="imagens/itACoisa.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">It - A Coisa</h5>
-                <a href="#" class="ver-mais">Ver mais</a>
+                <h4 class="card-title">It - A Coisa</h4>
+                <h2 class="card-price">Ver mais</h2>
             </div>
         </div>
-
-        <div class="card">
+</a>
+ <a href="#" class="ver-mais">        <div class="card">
             <img src="imagens/mecanica amor alexene farol.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">A Mecânica do Amor</h5>
-                <a href="#" class="ver-mais">Ver mais</a>
+                <h4 class="card-title">A Mecânica do Amor</h4>
+                <h2 class="card-price">Ver mais</h2>
             </div>
-        </div>
-
+        </div></a>
+<a href="#" class="ver-mais">
         <div class="card">
             <img src="imagens/diario_de_um_banana.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Diário de um Banana<h5>
-                <a href="#" class="ver-mais">Ver mais</a>
+                <h4 class="card-title">Diário de um Banana<h4>
+                    <h2 class="card-price">Ver mais</h2>
             </div>
         </div>
-    </div>
+    </div></a>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -249,14 +253,14 @@ a {
         <div class="card">
             <img src="imagens/oPequeno_principe.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">O Pequeno Príncipe</h5>
+                <h4 class="card-title">O Pequeno Príncipe</h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
         <div class="card">
             <img src="imagens/sonhodeumanoitedeverao.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Sonho de Uma Noite de Verão</h5>
+                <h4 class="card-title">Sonho de Uma Noite de Verão</h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
@@ -264,7 +268,7 @@ a {
         <div class="card">
             <img src="imagens/livroharry.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Harry Potter</h5>
+                <h4 class="card-title">Harry Potter</h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
@@ -272,7 +276,7 @@ a {
         <div class="card">
             <img src="imagens/percyjackson.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Percy Jackson - O Ladrão de Raios</h5>
+                <h4 class="card-title">Percy Jackson - O Ladrão de Raios</h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
@@ -280,7 +284,7 @@ a {
         <div class="card">
             <img src="imagens/melhor  do que nos filmes.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Melhor do que nos Filmes<h5>
+                <h4 class="card-title">Melhor do que nos Filmes<h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
@@ -309,7 +313,7 @@ a {
         <div class="card">
             <img src="imagens/A sociedade oculta de londres.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">A Sociedade Oculta de Londres</h5>
+                <h4 class="card-title">A Sociedade Oculta de Londres</h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
@@ -317,7 +321,7 @@ a {
         <div class="card">
             <img src="imagens/O amor que partiu o mundo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">O Amor que Partiu o Mundo</h5>
+                <h4 class="card-title">O Amor que Partiu o Mundo</h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
@@ -325,7 +329,7 @@ a {
         <div class="card">
             <img src="imagens/era uma vez um renegado.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Era uma vez um Renegado</h5>
+                <h4 class="card-title">Era uma vez um Renegado</h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
@@ -333,7 +337,7 @@ a {
         <div class="card">
             <img src="imagens/Fique comigo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Fique Comigo</h5>
+                <h4 class="card-title">Fique Comigo</h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
@@ -341,7 +345,7 @@ a {
         <div class="card">
             <img src="imagens/coraline.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Coraline<h5>
+                <h4 class="card-title">Coraline<h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
@@ -360,7 +364,7 @@ a {
         </div>
     </div>
 
-    <h1 class="classificacao">Nacionais:</h1>
+    <h1 class="classificacao" class="align-items: center;">Nacionais:</h1>
 
     
     <div class="card-container">
@@ -368,7 +372,7 @@ a {
         <div class="card">
             <img src="imagens/o cortiço.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">O Cortiço</h5>
+                <h4 class="card-title">O Cortiço</h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
@@ -376,7 +380,7 @@ a {
         <div class="card">
             <img src="imagens/dom casmurro.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Dom Casmurro</h5>
+            <h4 class="card-title">Dom Casmurro</h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
@@ -384,7 +388,7 @@ a {
         <div class="card">
             <img src="imagens/memorias postumas de bras cubas - machado de assis.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Memórias póstumas de Brás Cubas</h5>
+                <h4 class="card-title">Memórias póstumas de Brás Cubas</h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
@@ -392,7 +396,7 @@ a {
         <div class="card">
             <img src="imagens/Quincas Borba.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Quincas Borba</h5>
+                <h4 class="card-title">Quincas Borba</h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
@@ -400,7 +404,7 @@ a {
         <div class="card">
             <img src="imagens/vidas secas.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Vidas secas<h5>
+                <h4 class="card-title">Vidas secas<h4>
                 <a href="#" class="ver-mais">Ver mais</a>
             </div>
         </div>
