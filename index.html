@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/footer.css">
 
@@ -18,9 +17,9 @@
 </head>
 
 <body>
-    <header>
-        <a href="./pages/contactUs/contact_us.html" class="logo">
-            <img src="imgs/logo.png" alt="Logo do BookSpace">
+    <header class="header">
+        <a href="pages/contactUs/contactus.html" class="logo">
+            <img src="imgs/resources/logo.png" alt="Logo do BookSpace">
         </a>
 
         <!-- BOA PRÁTICA: USAR CLASSES PARA DEFINIR DIVS E ELEMENTOS NO GERAL -->
@@ -38,7 +37,7 @@
         <div class="search-container">
             <form action="/search" method="get">
                 <input type="text" name="q" placeholder="Pesquisar...">
-                <button type="submit" class="input-fixado"><img src="imgs/search-icon.svg" alt="" style="width: 35px"></button>
+                <button type="submit" class="input-fixado"><img src="imgs/resources/search-icon.svg" alt="" style="width: 35px"></button>
             </form>
         </div>
     </header>
@@ -56,11 +55,77 @@
           </div>
         </div>
       </div>
-
-    <div id="main-content"> 
-        LEMBRA DE TIRAR A ALTURA NO CSS!!!! 
-    </div>
       
+    <main>
+
+        <div class="tags">
+        <h2>Os mais procurados!</h2>
+        </div>
+        
+        <div class="card-container">
+        
+            <div class="card">
+                <img src="imgs/books/maisProcurados/aCabana.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">A Cabana</h5>
+                    <a href="pages/see-more/see_more.html" class="ver-mais">Ver mais</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="imgs/books/maisProcurados/assimQueAcaba.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">É assim que acaba</h5>
+                    <a href="#" class="ver-mais">Ver mais</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="imgs/books/maisProcurados/itACoisa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">It - A Coisa</h5>
+                    <a href="#" class="ver-mais">Ver mais</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="imgs/books/maisProcurados/oPequeno_principe.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">O Pequeno Príncipe</h5>
+                    <a href="#" class="ver-mais">Ver mais</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="imgs/books/maisProcurados/diario_de_um_banana.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Diário de um Banana<h5>
+                    <a href="#" class="ver-mais">Ver mais</a>
+                </div>
+            </div>
+        </div>
+    
+        
+    
+        <div id="maincarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgs/resources/cansoudoseulivrotroqueaqui!.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagem2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagem3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    
+        
+
+    </main>
+    
+
         <footer class="py-4">
             <div class="container">
                 <div class="row">
@@ -102,7 +167,7 @@
                                     </li>
                                     <li class="navLink-individual">
                                         <a href="https://www.skoob.com.br/" target="_blank" class="mx-2">
-                                            <i><img src="imgs/skoob.icon.svg" style="width:30px;"></i>
+                                            <i><img src="imgs/resources/skoob.icon.svg" style="width:30px;"></i>
                                         </a> 
                                     </li>
                                 </ul>

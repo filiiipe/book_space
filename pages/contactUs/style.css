@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.h2{
+    color: #fff;
+}
+
 .logo img {
     width: 100px;
     height: auto;
@@ -25,7 +29,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #38B6FF;
+    background: #fff;
 }
 
 section {
@@ -33,7 +37,7 @@ section {
     max-width: 450px;
     height: 550px;
     position: relative;
-    background-color: #8cd1f9;
+    background-color: #131921;
     border-radius: 10px;
     box-sizing: border-box;
     display: flex;

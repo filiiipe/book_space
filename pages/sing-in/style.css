@@ -36,7 +36,7 @@ body::before {
 }
 
 .login_body {
-    padding: 60px;
+    padding:60px;
     z-index: 90;
     position: relative;
     max-width: 450px;
@@ -46,12 +46,14 @@ body::before {
     border-radius: 10px;
     box-sizing: border-box;
     transform: translateX(-50%);
+    
 }
 
 .login_body h2 {
     font-size: 32px;
     color: #fff;
     margin-top: 0;
+    text-align: center;
 }
 
 .login_body input {
@@ -62,8 +64,11 @@ body::before {
     border: none;
     border-radius: 5px;
     padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     box-sizing: border-box;
     outline: none;
+    
 }
 
 .login_body input:hover {
@@ -77,8 +82,8 @@ body::before {
 .login_body button {
     height: 50px;
     width: 100%;
-    color: #fff;
-    background-color: #234d7c;
+    color: #ffffff;
+    background-color: #1679ea;
     border-radius: 3px;
     font-weight: bold;
     font-size: 16px;
@@ -87,16 +92,48 @@ body::before {
 }
 
 .login_body button:hover {
-    background-color: #124e6a;
+    background-color: #116fda;
     cursor: pointer;
 }
 
 .support {
     display: flex;
-    color: #fff;
+    color: #000000;
     justify-content: space-between;
     font-size: 12px;
     margin-bottom: 5px;
+}
+
+.supporthelp{
+    display: flex;
+    color: #000000 ;
+    justify-content: right;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.support input {
+    width: 15px;
+    height: 15px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.remember span {
+    margin-right: 5px;
+    height: 25px;
+}
+
+.help a {
+    text-decoration: none;
+    color: #418fc7 !important;
+}
+
+.help a:hover {
+    text-decoration: underline;
 }
 
 .login_facebook {
@@ -122,26 +159,6 @@ body::before {
     color: #418fc7;
 }
 
-.support input {
-    width: 15px;
-    height: 15px;
-}
-
-.terms {
-    color: #fff;
-    font-size: 13px;
-    margin-top: 20px;
-    
-}
-
-.terms a {
-    text-decoration: none;
-    color: #418fc7;
-}
-
-.terms a:hover {
-    text-decoration: underline;
-}
 
 .sign_up {
     color: #fff;
@@ -158,11 +175,18 @@ body::before {
     text-decoration: underline;
 }
 
-.help a {
-    text-decoration: none;
-    color: #418fc7 !important;
+.terms {
+    color: #fff;
+    font-size: 13px;
+    margin-top: 20px;
+    
 }
 
-.help a:hover {
+.terms a {
+    text-decoration: none;
+    color: #418fc7;
+}
+
+.terms a:hover {
     text-decoration: underline;
 }
