@@ -225,7 +225,7 @@ main .card {
     background-color: #fdfeffee;
     border: 1px solid #d4d4d4;
     border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(91, 89, 89, 0.604);
     width: 150px;
     height: 300px;
     margin: 20px;
@@ -235,7 +235,7 @@ main .card {
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(133, 132, 132, 0.333);
 }
 
 main .card img {
@@ -247,11 +247,11 @@ main .card img {
 
 main .card:hover{
     transform: translateY(-20px);
-    box-shadow: 0 12px 24px #000000;
+    box-shadow: 0 12px 24px #8483837a;
 }
 
 main .card-title {
-    font-size: 1.25rem;
+    font-size: 0.7rem;
     margin-bottom: 10px;
     flex-grow: 1;
     overflow: hidden;
@@ -263,6 +263,7 @@ main .card-title {
     color: #4a90e2;
     text-decoration: none;
     font-weight: bold;
+    font-size: 15px;
 }
 
 .ver-mais:hover {
@@ -339,3 +340,4 @@ section.slider{
     border-radius: 50%;
     cursor: pointer;
 }
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Livros</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        window.onload = function() {
+            Swal.fire({
+                title: 'Bem-vindo à página de troca!',
+                text: 'Preencha os campos abaixo para enviar um pedido de troca para o livro escolhido!',
+                icon: 'info',
+                confirmButtonText: 'Entendi'
+            });
+        };
+    </script>
+
+</head>
+<body>
+    <header>
+        <h2 style="color: white;">Solicitar Troca</h2>
+    </header>
+    
+    <main>
+        <section class="book-details">
+            <h2>Detalhes do Livro</h2>
+            <img src="../../imgs/books/maisProcurados/oPequeno_principe.jpg" alt="Capa do Livro A Cabana" class="book-cover" height="250px">
+            <div class="book-info">
+                <h3>O Pequeno Príncipe</h3>
+                <p><strong>Autor:</strong> Antonie de Saint-Exupéry</p>
+                <p><strong>Editora:</strong> Faro Editorial</p>
+                <p><strong>Gênero:</strong> Infantil</p>
+                <p><strong>Descrição:</strong> "O Pequeno Príncipe" é uma obra clássica da literatura mundial, escrita por Antoine de Saint-Exupéry e publicada pela primeira vez em 1943. A história é apresentada como um conto poético e filosófico que aborda temas universais, tais como amor, amizade, perda e a essência da vida.</p>
+            </div>
+        </section>
+
+        <section class="exchange-form">
+            <h2>Trocar este Livro</h2>
+            <form action="processar-troca.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="livro-oferecido">Livro Oferecido:</label>
+                <input type="text" id="livro-oferecido" name="livro-oferecido" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar Pedido de Troca</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seu Site de Livros</p>
+    </footer>
+</body>
+</html>
