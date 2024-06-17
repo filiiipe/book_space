@@ -1,0 +1,91 @@
+body.romance {
+    background-color: #ffe6e6;
+}
+
+header.romance {
+    background-color: #ff6699;
+}
+
+body.terror {
+    background-color: #333;
+    color: white;
+}
+
+header.terror {
+    background-color: #111;
+}
+
+body.infantil {
+    background-color: #e6f7ff;
+}
+
+header.infantil {
+    background-color: #66b3ff;
+}
+
+.card {
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    max-height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: black;
+}
+
+.categoria-nome {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+footer {
+    background-color: #131921 !important;
+    color: white;
+    padding: 20px 0;
+}
+
+footer .card {
+    background-color: #131921 !important;
+    border: none;
+}
+
+footer .card-title, footer .card-text, footer .social-icon {
+    color: #fff;
+}
+
+.social-icon {
+    font-size: 1.5em;
+}
+
+footer img {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    color: rgb(255, 252, 252);
+}
+
+.footericons{
+    display: flex !important;
+    align-items: center !important;  
+    justify-content: left !important;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}

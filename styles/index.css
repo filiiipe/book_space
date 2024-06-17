@@ -225,8 +225,13 @@ main .card {
     background-color: #fdfeffee;
     border: 1px solid #d4d4d4;
     border-radius: 20px;
+<<<<<<< Updated upstream
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 150px;
+=======
+    box-shadow: 0 2px 4px rgba(91, 89, 89, 0.604);
+    width: 200px;
+>>>>>>> Stashed changes
     height: 300px;
     margin: 20px;
     padding: 20px;
