@@ -18,8 +18,8 @@
 
 <body>
     <header class="header">
-        <a href="pages/contactUs/contactus.html" class="logo">
-            <img src="imgs/resources/logo.png" alt="Logo do BookSpace">
+        <a href="index.html" class="logo">
+            <img src="imgs/resources/logo.png" alt="Logo do BookSpace" style="margin-left: 30px; margin-right: 230px;">
         </a>
 
         <!-- BOA PRÁTICA: USAR CLASSES PARA DEFINIR DIVS E ELEMENTOS NO GERAL -->
@@ -31,13 +31,15 @@
                 <li class="navLink-individual"><a href="#">Infantil</a></li>
                 <li class="navLink-individual"><a href="#">Ficção</a></li>
                 <li class="navLink-individual"><a href="#">Colecionador</a></li>
+                <li class="navLink-individual trocar"><a href="pages/Trocar/Trocar.html">Trocar</a></li>
+                <li class="navLink-individual cadastro"><a href="pages/sing-in/sing-in.html">Cadastre-se</a></li>
+                <li class="navLink-individual entrar"><a href="pages/login/login.html">Entrar</a></li>
             </ul>
         </div>
-        
         <div class="search-container">
             <form action="/search" method="get">
-                <input type="text" name="q" placeholder="Pesquisar...">
-                <button type="submit" class="input-fixado"><img src="imgs/resources/search-icon.svg" alt="" style="width: 35px"></button>
+                <input type="text" name="q" placeholder="Pesquisar..." style="width: 265px "">
+                <button type="submit" class="input-fixado"><img src="imgs/resources/search-icon.svg" alt="" style="width:35px"  ></button>
             </form>
         </div>
     </header>
@@ -59,7 +61,7 @@
     <main>
 
         <div class="tags">
-        <h2>Os mais procurados!</h2>
+        <h2>Os mais Populares!</h2>
         </div>
         
         <div class="card-container">
@@ -67,7 +69,7 @@
             <div class="card">
                 <img src="imgs/books/maisProcurados/aCabana.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">A Cabana</h5>
+                    <h5 class="card-title" style="font-size: 15px;">A Cabana</h5>
                     <a href="pages/see-more/cabana.html" class="ver-mais">Ver mais</a>
                 </div>
             </div>
@@ -75,7 +77,7 @@
             <div class="card">
                 <img src="imgs/books/maisProcurados/assimQueAcaba.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">É assim que acaba</h5>
+                    <h5 class="card-title" style="font-size: 13px;">É assim que acaba</h5>
                     <a href="pages/see-more/eassimqueacaba.html" class="ver-mais">Ver mais</a>
                 </div>
             </div>
@@ -105,7 +107,103 @@
             </div>
         </div>
     
+        <div class="tags">
+            <h2>
+                Melhores Avaliados <i class="bi bi-star-fill text-warning"></i>
+            </h2>
+        </div>
         
+            <div class="card-container">
+            
+                <div class="card">
+                    <img src="imgs/books/best seller/cartasDeAmorAosMortos.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cartas de amor aos mortos</h5>
+                        <a href="pages/see-more/cartasdeamor.html" class="ver-mais">Ver mais</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="imgs/books/best seller/oDiarioDeAnneFrank.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">O Diário de Anne Frank (Clássicos da literatura mundial)</h5>
+                        <a href="pages/see-more/odiariodeanne.html" class="ver-mais">Ver mais</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="imgs/books/best seller/oMeninoDoPijamaListrado.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">O menino do pijama listrado</h5>
+                        <a href="pages/see-more/omeninodopijama.html" class="ver-mais">Ver mais</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="imgs/books/best seller/quemEVoceAlasca.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Quem é você, Alasca?: Edição comemorativa de 10 anos</h5>
+                        <a href="pages/see-more/quemevoce.html" class="ver-mais">Ver mais</a>
+                    </div>
+                </div>
+        
+                <div class="card ">
+                    <img src="imgs/books/best seller/oqueAconteceuComVoce.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title ">O que aconteceu com você?: Uma visão sobre trauma, resiliência e cura<h5>
+                        <a href="pages/see-more/oqueaconteceu.html" class="ver-mais">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+    
+        
+    
+        <div class="tags">
+            <h2>Ficções</h2>
+            </div>
+            
+            <div class="card-container">
+            
+                <div class="card">
+                    <img src="imgs/books/ficçao/a-danca-da-morte-640w.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">A Dança da Morte</h5>
+                        <a href="pages/see-more/adanca.html" class="ver-mais">Ver mais</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="imgs/books/ficçao/a-guerra-dos-mundos-hg-wells.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">A Guerra dos Mundos</h5>
+                        <a href="pages/see-more/aguerradosmundos.html" class="ver-mais">Ver mais</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="imgs/books/ficçao/butler.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kinded: Laços de sangue</h5>
+                        <a href="pages/see-more/butlet.html" class="ver-mais">Ver mais</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="imgs/books/ficçao/A-Senhora-de-Tundra.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">A Senhora de Tundra</h5>
+                        <a href="pages/see-more/asenhora.html" class="ver-mais">Ver mais</a>
+                    </div>
+                </div>
+        
+                <div class="card ">
+                    <img src="imgs/books/ficçao/rainha-das-sombras-trono-de-vidro-vol-4-book.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title ">Trono de Vidro: Rainha das Sombras<h5>
+                        <a href="pages/see-more/trono.html" class="ver-mais">Ver mais</a>
+                    </div>
+                </div>
+            </div>
     
         <div id="maincarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -178,6 +276,7 @@
                     </div>
                 </div>
             </div>
+            
         </footer>
     </body>
 </html>

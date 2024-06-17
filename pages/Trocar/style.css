@@ -1,0 +1,105 @@
+.alert-title {
+    color: white;
+}
+
+.alert-message {
+    color: white;
+}
+
+.alert-container {
+    background-color: #131921;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.alert-confirm-button {
+    background-color: #131921;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom:130px ;
+    background-color: #f9f9f9;
+}
+
+
+footer {
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    padding-top: 10px 0;
+}
+
+main {
+    padding-top: 110px;
+    width: 510px;
+    margin: 0 auto;
+    
+}
+
+.book-details,
+.exchange-form {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 450px;
+}
+
+.book-cover {
+    max-width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.book-info {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+    color: #131921;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    
+}
+
+input,
+textarea,
+button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+button {
+    background-color: #131921;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+header{
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+}
+
