@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Livros</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        window.onload = function() {
+            Swal.fire({
+                title: 'Bem-vindo à página de troca!',
+                text: 'Preencha os campos abaixo para enviar os dados do seu livro!',
+                icon: 'info',
+                confirmButtonText: 'Entendi'
+            });
+        };
+    </script>
+
+</head>
+<body>
+    <header>
+        <h2 style="color: white;">Solicitar Troca</h2>
+    </header>
+    
+    <main>
+        
+
+        <section class="exchange-form">
+            <h2 style="text-align: center;">Trocar este Livro</h2>
+            <form action="processar-troca.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="livro-oferecido">Livro Oferecido:</label>
+                <input type="text" id="livro-oferecido" name="livro-oferecido" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <input type="mensagem" id="mensagem" name="mensagem"  required></input>
+
+                <button type="submit">Enviar Pedido de Troca</button>
+            </form>
+        </section>
+    </main>
+
+    
+</body>
+</html>

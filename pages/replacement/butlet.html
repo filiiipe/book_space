@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Livros</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        window.onload = function() {
+            Swal.fire({
+                title: 'Bem-vindo à página de troca!',
+                text: 'Preencha os campos abaixo para enviar um pedido de troca para o livro escolhido!',
+                icon: 'info',
+                confirmButtonText: 'Entendi'
+            });
+        };
+    </script>
+
+</head>
+<body>
+    <header>
+        <h2 style="color: white;">Solicitar Troca</h2>
+    </header>
+    
+    <main>
+        <section class="book-details">
+            <h2>Detalhes do Livro</h2>
+            <img src="../../imgs/books/ficçao/butler.jpg" alt="Capa do Livro A Cabana" class="book-cover">
+            <div class="book-info">
+                <h3>Kindred: Laços de sangue</h3>
+                <p><strong>Autor:</strong> Octavia Butler</p>
+                <p><strong>Editora:</strong> Doubleday</p>
+                <p><strong>Gênero:</strong> Ficção, Romance</p>
+                <p><strong>Descrição:</strong> "Kindred" é um romance em que a protagonista, Dana, é transportada misteriosamente no tempo para o Sul dos Estados Unidos do século XIX, durante a escravidão. Lá, ela descobre que tem uma conexão direta com um jovem branco, Rufus Weylin, cuja vida está entrelaçada com a sua própria genealogia. Dana enfrenta os desafios brutais da escravidão enquanto tenta entender como e por que ela foi chamada ao passado, lutando para sobreviver e encontrar uma maneira de voltar para casa. O livro explora temas de poder, identidade racial, relações humanas e a luta pela sobrevivência em face da opressão histórica.</p>
+            </div>
+        </section>
+
+        <section class="exchange-form">
+            <h2>Trocar este Livro</h2>
+            <form action="processar-troca.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="livro-oferecido">Livro Oferecido:</label>
+                <input type="text" id="livro-oferecido" name="livro-oferecido" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar Pedido de Troca</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seu Site de Livros</p>
+    </footer>
+</body>
+</html>

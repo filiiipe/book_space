@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Livros</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        window.onload = function() {
+            Swal.fire({
+                title: 'Bem-vindo à página de troca!',
+                text: 'Preencha os campos abaixo para enviar um pedido de troca para o livro escolhido!',
+                icon: 'info',
+                confirmButtonText: 'Entendi'
+            });
+        };
+    </script>
+
+</head>
+<body>
+    <header>
+        <h2 style="color: white;">Solicitar Troca</h2>
+    </header>
+    
+    <main>
+        <section class="book-details">
+            <h2>Detalhes do Livro</h2>
+            <img src="../../imgs/books/best seller/oqueAconteceuComVoce.jpg" alt="Capa do Livro O que aconteceu com você?" class="book-cover">
+            <div class="book-info">
+                <h3>O que aconteceu com você?</h3>
+                <p><strong>Autor:</strong> Oprah Winfrey</p>
+                <p><strong>Editora:</strong> Flatiron Books</p>
+                <p><strong>Gênero:</strong> Autoajuda</p>
+                <p><strong>Descrição:</strong> 
+                    "O que aconteceu com você?" é um livro co-escrito pelo psiquiatra Dr. Bruce D. Perry e pela apresentadora Oprah Winfrey. A obra explora como as experiências adversas na infância, como abuso, negligência e outros traumas, podem moldar o desenvolvimento humano de maneira profunda e duradoura. Baseado em evidências científicas e estudos de caso, o livro examina como o trauma afeta o desenvolvimento do cérebro, o comportamento e a saúde mental ao longo da vida. Além de analisar o impacto devastador dessas experiências, também oferece perspectivas sobre como a compreensão e o apoio adequado podem ajudar na cura e na resiliência das pessoas afetadas.</p>
+            </div>
+        </section>
+
+        <section class="exchange-form">
+            <h2>Trocar este Livro</h2>
+            <form action="processar-troca.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="livro-oferecido">Livro Oferecido:</label>
+                <input type="text" id="livro-oferecido" name="livro-oferecido" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar Pedido de Troca</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seu Site de Livros</p>
+    </footer>
+</body>
+</html>
