@@ -42,12 +42,9 @@ header.infantil {
     color: black;
 }
 
-.categoria-nome {
-<<<<<<< HEAD
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-=======
-    font-family:sans-serif ;
->>>>>>> Alteracao2_17/06
+.card-text{
+    font-family: sans-serif;
+    color: black;
 }
 
 footer {
@@ -93,10 +90,3 @@ footer img {
         margin-bottom: 20px;
     }
 }
-<<<<<<< HEAD
-=======
-
-.card-text{
-    color: #111;
-}
->>>>>>> Alteracao2_17/06
