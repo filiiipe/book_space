@@ -23,9 +23,38 @@ header.infantil {
     background-color: #66b3ff;
 }
 
+body.bestseller {
+    background: linear-gradient(to bottom, rgb(113, 6, 6), #2e0000) ;
+    
+    
+}
+
+header.bestseller {
+    background-color: rgb(0, 0, 0);
+    
+}
+
+header.ficcao{
+    background-color: rgb(3, 1, 32);
+}
+
+body.ficcao{
+    background-image:url(../../imgs/books/ficçao/backgroundficcao.jpg) ; 
+}
+
+header.colecionador{
+    background-color: #160e03;
+}
+
+body.colecionador{
+    background-image: url(../../imgs/books/colecionador/reliquiaa.jpg);
+}
+
+
 .card {
     transition: transform 0.3s;
     margin-bottom: 30px;
+    background-color: rgba(240, 248, 255, 0.894);
 }
 
 .card:hover {
@@ -89,4 +118,9 @@ footer img {
     .card {
         margin-bottom: 20px;
     }
+}
+
+
+.card-body{
+    text-align: center;
 }
