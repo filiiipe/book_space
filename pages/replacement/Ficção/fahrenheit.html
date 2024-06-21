@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Livros</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        window.onload = function() {
+            Swal.fire({
+                title: 'Bem-vindo à página de troca!',
+                text: 'Preencha os campos abaixo para enviar um pedido de troca para o livro escolhido!',
+                icon: 'info',
+                confirmButtonText: 'Entendi'
+            });
+        };
+    </script>
+
+</head>
+<body>
+    <header>
+        <h2 style="color: white;">Solicitar Troca</h2>
+    </header>
+    
+    <main>
+        <section class="book-details">
+            <h2>Detalhes do Livro</h2>
+            <img src="../../../imgs/books/ficçao/fahrenheit-451-ray-bradbury.jpg" alt="Capa do Livro A Cabana" class="book-cover">
+            <div class="book-info">
+                <h3>Fahrenheit 451</h3>
+                <p><strong>Autor:</strong>Ray Bradbury</p>
+                <p><strong>Editora:</strong> Arqueiro</p>
+                <p><strong>Gênero:</strong> Ficção, Drama</p>
+                <p><strong>Descrição:</strong> "Fahrenheit 451" de Ray Bradbury é uma distopia que explora um futuro onde os livros são proibidos e "bombeiros" queimam qualquer obra literária encontrada. Guy Montag, o protagonista, é um desses bombeiros. No entanto, ele começa a questionar sua vida e o propósito de seu trabalho após conhecer Clarisse, uma jovem que vê o mundo de maneira diferente. Montag acaba se rebelando contra a sociedade opressora e foge para se juntar a um grupo de dissidentes que memorizam livros para preservar seu conteúdo. O livro aborda temas como censura, conformismo e o impacto da tecnologia na sociedade.</p>
+            </div>
+        </section>
+
+        <section class="exchange-form">
+            <h2>Trocar este Livro</h2>
+            <form action="processar-troca.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="livro-oferecido">Livro Oferecido:</label>
+                <input type="text" id="livro-oferecido" name="livro-oferecido" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar Pedido de Troca</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seu Site de Livros</p>
+    </footer>
+</body>
+</html>

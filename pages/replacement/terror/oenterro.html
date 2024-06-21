@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Livros</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        window.onload = function() {
+            Swal.fire({
+                title: 'Bem-vindo à página de troca!',
+                text: 'Preencha os campos abaixo para enviar um pedido de troca para o livro escolhido!',
+                icon: 'info',
+                confirmButtonText: 'Entendi'
+            });
+        };
+    </script>
+
+</head>
+<body>
+    <header>
+        <h2 style="color: white;">Solicitar Troca</h2>
+    </header>
+    
+    <main>
+        <section class="book-details">
+            <h2>Detalhes do Livro</h2>
+            <img src="../../../imgs/books/Terror/enterroPrematurodeEdgarAlan.jpg" alt="Capa do Livro A Cabana" class="book-cover">
+            <div class="book-info">
+                <h3>O enterro prematuro</h3>
+                <p><strong>Autor:</strong> Edgar Allan Poe</p>
+                <p><strong>Editora:</strong> Mercuryo Jovem</p>
+                <p><strong>Gênero:</strong> Terror, Drama</p>
+                <p><strong>Descrição:</strong> "O Enterro Prematuro" (título original "The Premature Burial") é um conto de Edgar Allan Poe, publicado pela primeira vez em 1844. Este conto é um exemplo clássico do talento de Poe para explorar temas de terror psicológico e medos humanos profundos. Aqui estão alguns dos destaques e elementos marcantes do conto:</p>
+            </div>
+        </section>
+
+        <section class="exchange-form">
+            <h2>Trocar este Livro</h2>
+            <form action="processar-troca.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="livro-oferecido">Livro Oferecido:</label>
+                <input type="text" id="livro-oferecido" name="livro-oferecido" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar Pedido de Troca</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seu Site de Livros</p>
+    </footer>
+</body>
+</html>

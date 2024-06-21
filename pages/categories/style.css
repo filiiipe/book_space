@@ -24,7 +24,7 @@ header.infantil {
 }
 
 body.bestseller {
-    background: linear-gradient(to bottom, rgb(113, 6, 6), #2e0000) ;
+    background-image: url(../../imgs/71.jpg) ;
     
     
 }
@@ -39,15 +39,15 @@ header.ficcao{
 }
 
 body.ficcao{
-    background-image:url(../../imgs/books/ficçao/backgroundficcao.jpg) ; 
+    background-image:url(../../imgs/books/ficçao/background-3907905_1280.webp) ; 
 }
 
 header.colecionador{
-    background-color: #160e03;
+    background-color: #000000;
 }
 
 body.colecionador{
-    background-image: url(../../imgs/books/colecionador/reliquiaa.jpg);
+     background-image: url(../../imgs/books/colecionador/vetor-de-parede-de-concreto-marrom-com-arranhoes.jpg);
 }
 
 
